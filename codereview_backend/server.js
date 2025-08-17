@@ -22,7 +22,7 @@ app.listen(port, () => {
 app.post("/review", async (req, res) => {
   res.setHeader(
     `Access-Control-Allow-Origin`,
-    `https://code-review-tool-s9t3.onrender.com`
+    `https://code-review-tool-frontend.onrender.com`
   );
   console.log(req.body);
 
