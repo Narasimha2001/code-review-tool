@@ -20,7 +20,10 @@ app.listen(port, () => {
 });
 
 app.post("/review", async (req, res) => {
-  res.setHeader(`Access-Control-Allow-Origin`, `http://localhost:4200`);
+  res.setHeader(
+    `Access-Control-Allow-Origin`,
+    `https://code-review-tool-s9t3.onrender.com`
+  );
   console.log(req.body);
 
   const response = {
