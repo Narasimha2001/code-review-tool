@@ -5,7 +5,7 @@ const bodyparser = require("body-parser");
 const { GoogleGenAI } = require("@google/genai");
 
 const corsOptions = {
-  origin: "http://localhost:4200",
+  origin: "https://code-review-tool-frontend.onrender.com",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
