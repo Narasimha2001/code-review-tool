@@ -1,0 +1,16 @@
+<div id="loader" class="loader-wrapper hidden">
+  <div class="spinner"></div>
+</div>
+<div class="main">
+  <app-code-editor
+    class="editor"
+    (onReview)="onReviewGenerate($event)"
+  ></app-code-editor>
+</div>
+
+<div *ngIf="reviewToDisplay != ''">
+  <app-review-output
+    class="output"
+    [reviewToDisplay]="reviewToDisplay"
+  ></app-review-output>
+</div>

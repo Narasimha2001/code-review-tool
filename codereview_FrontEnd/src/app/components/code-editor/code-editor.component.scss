@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  width: 100%;
+  height: 90%;
+}
+.input {
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  font-family: "JetBrains Mono", monospace;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-decoration: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  margin: auto;
+  display: flex;
+}
