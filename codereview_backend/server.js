@@ -5,7 +5,8 @@ const bodyparser = require("body-parser");
 const { GoogleGenAI } = require("@google/genai");
 
 const corsOptions = {
-  origin: "http://localhost:4200",
+  // origin: "http://localhost:4200",
+  origin: "https://code-review-tool-s9t3.onrender.com",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
@@ -16,13 +17,14 @@ app.use(bodyparser.json());
 const port = process.env.PORT || 3000; // Use the port provided by the host or default to 3000
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
-  console.log(process.env.PORT);
+  // console.log(process.env.PORT);
 });
 
 app.post("/review", async (req, res) => {
   res.setHeader(
     `Access-Control-Allow-Origin`,
     `https://code-review-tool-s9t3.onrender.com`
+    // `http://localhost:4200`
   );
   console.log(req.body);
 
