@@ -6,7 +6,7 @@ const { GoogleGenAI } = require("@google/genai");
 
 const corsOptions = {
   // origin: "http://localhost:4200",
-  origin: "https://code-review-tool-s9t3.onrender.com",
+  origin: "https://code-review-tool-frontend.onrender.com",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
@@ -23,7 +23,7 @@ app.listen(port, () => {
 app.post("/review", async (req, res) => {
   res.setHeader(
     `Access-Control-Allow-Origin`,
-    `https://code-review-tool-s9t3.onrender.com`
+    `https://code-review-tool-frontend.onrender.com`
     // `http://localhost:4200`
   );
   console.log(req.body);
